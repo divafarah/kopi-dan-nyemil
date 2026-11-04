@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    android:background="@color/cream">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:contentDescription="Logo Kopi dan Nyemil" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Selamat Datang"
+        android:textColor="@color/cocoa"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Pilih untuk masuk atau mendaftar"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnRegisterChoice"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:text="DAFTAR / REGISTER"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnLoginChoice"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/strawberry_dark"
+        android:text="MASUK / LOGIN"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

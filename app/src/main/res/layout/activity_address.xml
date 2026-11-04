@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat Pengiriman"
+        android:textColor="@color/cocoa"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Lengkapi alamat untuk mengirim pesananmu ♡"
+        android:textColor="@color/gray"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Nama Lengkap"
+        android:textColor="@color/cocoa"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etRecipient"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:hint="Masukkan nama penerima"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="@color/cocoa"
+        android:textColorHint="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Alamat"
+        android:textColor="@color/cocoa"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:gravity="top"
+        android:hint="Masukkan alamat lengkap"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:padding="12dp"
+        android:textColor="@color/cocoa"
+        android:textColorHint="@color/gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Patokan atau Detail Lengkap"
+        android:textColor="@color/cocoa"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etDetail"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:gravity="top"
+        android:hint="Contoh: Rumah pagar putih dekat masjid"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColor="@color/cocoa"
+        android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/btnOrderSend"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/strawberry_dark"
+        android:text="ORDER DAN KIRIM"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

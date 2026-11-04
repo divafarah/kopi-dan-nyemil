@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvProfileGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Halo, Nama!"
+        android:textColor="@color/cocoa"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Profile Saya"
+        android:textColor="@color/cocoa"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Profile Setting"
+        android:textColor="@color/matcha_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Nama Lengkap"
+        android:textColor="@color/cocoa"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/etProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:hint="Masukkan nama lengkap"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="@color/cocoa"
+        android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="@color/strawberry_dark"
+        android:text="SAVE"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/matcha_dark"
+            android:text="HOME"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/navOrder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/strawberry_dark"
+            android:text="ORDER"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/navProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/matcha_dark"
+            android:text="PROFILE"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="28dp"
+    android:background="@color/cream">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:contentDescription="Logo Kopi dan Nyemil" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Register"
+        android:textColor="@color/cocoa"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:hint="Nama Lengkap"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        android:textColor="@color/cocoa"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/cocoa"
+        android:textColorHint="@color/gray" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textColor="@color/cocoa"
+        android:textColorHint="@color/gray" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/strawberry_dark"
+        android:text="REGISTER"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/matcha_dark"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
