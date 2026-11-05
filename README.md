@@ -45,19 +45,6 @@ Berikut fitur yang tersedia dalam aplikasi Kopi dan Nyemil:
    Halaman yang menampilkan ringkasan pesanan, harga, nama penerima, dan alamat pengiriman.
 <img width="310" height="696" alt="konfirmasi pesanan" src="https://github.com/user-attachments/assets/fe932796-2546-40c6-aac4-5b36fd9e50f0" />
 
-Daftar Menu
-Aplikasi menyediakan 9 pilihan makanan dan minuman:
-| No. | Nama Menu | Harga |
-| 1 | Kopi Susu Gula Aren | Rp22.000 |
-| 2 | Donat Cokelat | Rp12.000 |
-| 3 | Sourdough Loaf | Rp35.000 |
-| 4 | Cappuccino | Rp25.000 |
-| 5 | Matcha Latte | Rp27.000 |
-| 6 | French Fries | Rp15.000 |
-| 7 | Mojito | Rp18.000 |
-| 8 | Pisang Goreng | Rp15.000 |
-| 9 | Teh Manis | Rp8.000 |
-
 Alur Penggunaan Aplikasi
 1. Pengguna membuka aplikasi melalui halaman Splash / Welcome.
 2. Pengguna memilih Register untuk membuat akun atau Login untuk masuk.
