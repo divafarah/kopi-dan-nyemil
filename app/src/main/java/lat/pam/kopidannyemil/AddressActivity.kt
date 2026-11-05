@@ -1,5 +1,5 @@
-
 package lat.pam.kopidannyemil
+
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -18,10 +18,8 @@ class AddressActivity : AppCompatActivity() {
         val etDetail = findViewById<EditText>(R.id.etDetail)
         val btnOrderSend = findViewById<Button>(R.id.btnOrderSend)
 
-        val preferences = getSharedPreferences(
-            "KopiDanNyemil",
-            MODE_PRIVATE
-        )
+        val preferences =
+            getSharedPreferences("KopiDanNyemil", MODE_PRIVATE)
 
         etRecipient.setText(preferences.getString("recipient", ""))
         etAddress.setText(preferences.getString("address", ""))
@@ -36,22 +34,23 @@ class AddressActivity : AppCompatActivity() {
             val detail = etDetail.text.toString().trim()
 
             if (recipient.isEmpty() || address.isEmpty() || detail.isEmpty()) {
+
                 Toast.makeText(
                     this,
                     "Semua alamat harus diisi!",
                     Toast.LENGTH_SHORT
                 ).show()
+
             } else {
+
                 preferences.edit()
                     .putString("recipient", recipient)
                     .putString("address", address)
                     .putString("detail", detail)
-                    .putBoolean("showOrderButtons", true)
                     .apply()
 
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, MenuActivity::class.java)
                 startActivity(intent)
-                finish()
             }
         }
     }
