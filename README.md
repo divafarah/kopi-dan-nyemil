@@ -12,6 +12,7 @@ Berikut fitur yang tersedia dalam aplikasi Kopi dan Nyemil:
 
 2.sign Up 
    Halaman pilihan bagi pengguna untuk melakukan registrasi atau login.
+   
 <img width="318" height="701" alt="halaman sign up" src="https://github.com/user-attachments/assets/68992b5a-4b15-48f3-a81f-6f7aa1f850f8" />
 
 3. Login
