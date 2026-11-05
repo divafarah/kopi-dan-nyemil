@@ -16,31 +16,42 @@ class OrderActivity : AppCompatActivity() {
         val tvSummary = findViewById<TextView>(R.id.tvOrderSummary)
         val btnOk = findViewById<Button>(R.id.btnOrderOk)
 
-        val preferences = UserPreferences(this)
+        val userPreferences = UserPreferences(this)
+
+        val savedPreferences = getSharedPreferences(
+            "KopiDanNyemil",
+            MODE_PRIVATE
+        )
 
         val item = intent.getStringExtra("item") ?: "Pesanan"
         val price = intent.getIntExtra("price", 0)
-        val recipient = intent.getStringExtra("recipient") ?: ""
-        val address = intent.getStringExtra("address") ?: ""
-        val detail = intent.getStringExtra("detail") ?: ""
 
-        tvGreeting.text = "Halo, ${preferences.getName()}!"
+        val recipient = savedPreferences.getString("recipient", "") ?: ""
+        val address = savedPreferences.getString("address", "") ?: ""
+        val detail = savedPreferences.getString("detail", "") ?: ""
+
+        tvGreeting.text = "Halo, ${userPreferences.getName()}!"
 
         val formattedPrice = "Rp %,d".format(price)
 
         tvSummary.text = """
+            Terima kasih sudah memesan di Kopi dan Nyemil!
+
             Produk: $item
             Total: $formattedPrice
 
             Penerima: $recipient
             Alamat: $address
             Patokan: $detail
+
+            Pesanan kamu sedang diproses ♡
         """.trimIndent()
 
         btnOk.setOnClickListener {
             val homeIntent = Intent(this, HomeActivity::class.java)
             homeIntent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or
                     Intent.FLAG_ACTIVITY_SINGLE_TOP
+
             startActivity(homeIntent)
             finish()
         }

@@ -5,13 +5,11 @@
     android:orientation="vertical"
     android:background="@color/cream">
 
-    <!-- AREA MENU YANG BISA DI-SCROLL -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:fillViewport="true"
-        android:scrollbars="vertical">
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,235 +44,491 @@
                 android:textSize="22sp"
                 android:textStyle="bold" />
 
-            <!-- MENU 1: KOPI -->
+            <!-- MENU 1 -->
             <LinearLayout
                 android:id="@+id/menu1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="110dp"
                 android:layout_marginTop="12dp"
-                android:orientation="vertical"
-                android:padding="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
                 android:background="@drawable/bg_menu"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:src="@drawable/kopi"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:contentDescription="Kopi Susu Gula Aren" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Kopi Susu Gula Aren"
-                    android:textColor="@color/cocoa"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Espresso, susu, gula aren"
-                    android:textColor="@color/gray"
-                    android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Kopi Susu Gula Aren"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Rp 22.000"
-                    android:textColor="@color/strawberry_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Espresso, susu, gula aren"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 22.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- MENU 2: DONAT -->
+            <!-- MENU 2 -->
             <LinearLayout
                 android:id="@+id/menu2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="110dp"
                 android:layout_marginTop="12dp"
-                android:orientation="vertical"
-                android:padding="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
                 android:background="@drawable/bg_menu"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:src="@drawable/donat"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:contentDescription="Donat Cokelat" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Donat Cokelat"
-                    android:textColor="@color/cocoa"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Donat empuk, glaze cokelat"
-                    android:textColor="@color/gray"
-                    android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Donat Cokelat"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Rp 12.000"
-                    android:textColor="@color/strawberry_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Donat empuk, glaze cokelat"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 12.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- MENU 3: SOURDOUGH -->
+            <!-- MENU 3 -->
             <LinearLayout
                 android:id="@+id/menu3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="110dp"
                 android:layout_marginTop="12dp"
-                android:orientation="vertical"
-                android:padding="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
                 android:background="@drawable/bg_menu"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:src="@drawable/sourdough"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:contentDescription="Sourdough Loaf" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Sourdough Loaf"
-                    android:textColor="@color/cocoa"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Roti fermentasi alami"
-                    android:textColor="@color/gray"
-                    android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sourdough Loaf"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Rp 35.000"
-                    android:textColor="@color/strawberry_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Roti fermentasi alami"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 35.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- MENU 4: CAPPUCCINO -->
+            <!-- MENU 4 -->
             <LinearLayout
                 android:id="@+id/menu4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="110dp"
                 android:layout_marginTop="12dp"
-                android:orientation="vertical"
-                android:padding="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
                 android:background="@drawable/bg_menu"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:src="@drawable/cappucino"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:contentDescription="Cappuccino" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Cappuccino"
-                    android:textColor="@color/cocoa"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Espresso, foam susu lembut"
-                    android:textColor="@color/gray"
-                    android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cappuccino"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Rp 25.000"
-                    android:textColor="@color/strawberry_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Espresso, foam susu lembut"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 25.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
 
-            <!-- MENU 5: MATCHA -->
+            <!-- MENU 5 -->
             <LinearLayout
                 android:id="@+id/menu5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="110dp"
                 android:layout_marginTop="12dp"
-                android:layout_marginBottom="15dp"
-                android:orientation="vertical"
-                android:padding="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
                 android:background="@drawable/bg_menu"
                 android:clickable="true"
                 android:focusable="true">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:src="@drawable/matcha"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
                     android:contentDescription="Matcha Latte" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Matcha Latte"
-                    android:textColor="@color/cocoa"
-                    android:textSize="17sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Matcha Jepang, susu segar"
-                    android:textColor="@color/gray"
-                    android:textSize="13sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Matcha Latte"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
 
-                <TextView
-                    android:layout_width="match_parent"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Matcha Jepang, susu segar"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 27.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- MENU 6: FRENCH FRIES -->
+            <LinearLayout
+                android:id="@+id/menu6"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:background="@drawable/bg_menu"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/french_fries"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="French Fries" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:text="Rp 27.000"
-                    android:textColor="@color/strawberry_dark"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="French Fries"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Kentang goreng renyah"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 15.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- MENU 7: MOJITO -->
+            <LinearLayout
+                android:id="@+id/menu7"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:background="@drawable/bg_menu"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/mojito"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Mojito" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mojito"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Minuman segar mint dan lemon"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 18.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- MENU 8: PISANG GORENG -->
+            <LinearLayout
+                android:id="@+id/menu8"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:background="@drawable/bg_menu"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/pisang_goreng"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Pisang Goreng" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pisang Goreng"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Pisang goreng renyah dan hangat"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 15.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- MENU 9: TEH MANIS -->
+            <LinearLayout
+                android:id="@+id/menu9"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:background="@drawable/bg_menu"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/teh_manis"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Teh Manis" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Teh Manis"
+                        android:textColor="@color/cocoa"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Teh manis segar"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="Rp 8.000"
+                        android:textColor="@color/strawberry_dark"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>

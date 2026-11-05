@@ -1,5 +1,5 @@
-package lat.pam.kopidannyemil
 
+package lat.pam.kopidannyemil
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -23,12 +23,11 @@ class AddressActivity : AppCompatActivity() {
             MODE_PRIVATE
         )
 
-        val selectedItem = intent.getStringExtra("item") ?: "Pesanan"
-        val selectedPrice = intent.getIntExtra("price", 0)
-
         etRecipient.setText(preferences.getString("recipient", ""))
         etAddress.setText(preferences.getString("address", ""))
         etDetail.setText(preferences.getString("detail", ""))
+
+        btnOrderSend.text = "LIHAT MENU"
 
         btnOrderSend.setOnClickListener {
 
@@ -39,27 +38,20 @@ class AddressActivity : AppCompatActivity() {
             if (recipient.isEmpty() || address.isEmpty() || detail.isEmpty()) {
                 Toast.makeText(
                     this,
-                    "Semua alamat pengiriman harus diisi!",
+                    "Semua alamat harus diisi!",
                     Toast.LENGTH_SHORT
                 ).show()
-
             } else {
-
                 preferences.edit()
                     .putString("recipient", recipient)
                     .putString("address", address)
                     .putString("detail", detail)
+                    .putBoolean("showOrderButtons", true)
                     .apply()
 
-                val orderIntent = Intent(this, OrderActivity::class.java)
-
-                orderIntent.putExtra("item", selectedItem)
-                orderIntent.putExtra("price", selectedPrice)
-                orderIntent.putExtra("recipient", recipient)
-                orderIntent.putExtra("address", address)
-                orderIntent.putExtra("detail", detail)
-
-                startActivity(orderIntent)
+                val intent = Intent(this, HomeActivity::class.java)
+                startActivity(intent)
+                finish()
             }
         }
     }

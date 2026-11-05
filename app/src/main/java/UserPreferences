@@ -1,0 +1,31 @@
+package lat.pam.kopidannyemil
+
+import android.content.Context
+
+class UserPreferences(context: Context) {
+
+    private val preferences = context.getSharedPreferences(
+        "KopiDanNyemil",
+        Context.MODE_PRIVATE
+    )
+
+    fun saveUser(name: String, username: String, password: String) {
+        preferences.edit()
+            .putString("name", name)
+            .putString("username", username)
+            .putString("password", password)
+            .apply()
+    }
+
+    fun getName(): String {
+        return preferences.getString("name", "") ?: ""
+    }
+
+    fun getUsername(): String {
+        return preferences.getString("username", "") ?: ""
+    }
+
+    fun getPassword(): String {
+        return preferences.getString("password", "") ?: ""
+    }
+}

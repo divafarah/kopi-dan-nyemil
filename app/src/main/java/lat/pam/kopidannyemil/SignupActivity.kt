@@ -18,26 +18,22 @@ class SignupActivity : AppCompatActivity() {
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnRegister = findViewById<Button>(R.id.btnRegister)
         val btnBack = findViewById<Button>(R.id.btnBack)
-        btnBack.setOnClickListener {
-            finish()
-        }
 
-        val preferences = UserPreferences(this)
+        val userPreferences = UserPreferences(this)
 
         btnRegister.setOnClickListener {
             val name = etName.text.toString().trim()
             val username = etUsername.text.toString().trim()
-            val password = etPassword.text.toString()
+            val password = etPassword.text.toString().trim()
 
             if (name.isEmpty() || username.isEmpty() || password.isEmpty()) {
                 Toast.makeText(
                     this,
-                    "Semua data harus diisi!",
+                    "Semua kolom harus diisi!",
                     Toast.LENGTH_SHORT
                 ).show()
-
             } else {
-                preferences.saveUser(name, username, password)
+                userPreferences.saveUser(name, username, password)
 
                 Toast.makeText(
                     this,
@@ -49,6 +45,10 @@ class SignupActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
+        }
+
+        btnBack.setOnClickListener {
+            finish()
         }
     }
 }
