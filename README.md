@@ -71,28 +71,5 @@ Cara Menjalankan Aplikasi
 5. Hubungkan perangkat Android atau jalankan Android Emulator.
 6. Klik tombol **Run** untuk menjalankan aplikasi.
 
-Panduan Penggunaan Aplikasi
-Berikut langkah-langkah menggunakan aplikasi Kopi dan Nyemil:
-1. Splash / Welcome
-   Buka aplikasi, kemudian tekan tombol START NOW untuk masuk ke halaman berikutnya.
-2. Sign Up
-   Pada halaman Sign Up, pilih REGISTER jika belum memiliki akun atau LOGIN jika sudah memiliki akun.
-3. Register
-   Jika memilih Register, isi nama lengkap, username, dan password. Setelah itu tekan tombol REGISTER untuk membuat akun.
-4. Login
-   Masukkan username dan password yang sudah didaftarkan, kemudian tekan tombol LOGIN untuk masuk ke aplikasi.
-5. Home
-   Setelah berhasil login, pengguna akan masuk ke halaman Home. Pada halaman ini tersedia 9 pilihan makanan dan minuman yang dapat dilihat.
-6. Order
-   Tekan tombol ORDER pada navigasi bawah untuk mulai melakukan pemesanan.
-7. Alamat Pengiriman
-   Isi nama penerima, alamat lengkap, serta patokan atau detail alamat. Setelah semua terisi, tekan tombol LIHAT MENU.
-8. Pilih Menu
-   Pengguna akan diarahkan ke halaman Pilih Menu. Pilih makanan atau minuman yang diinginkan dengan menekan tombol PESAN pada kartu menu.
-9. Konfirmasi Pesanan
-   Setelah memilih menu, aplikasi akan menampilkan halaman Konfirmasi Pesanan yang berisi nama produk, total harga, nama penerima, dan alamat pengiriman.
-10. Selesai
-    Periksa informasi pesanan, kemudian tekan tombol OK untuk kembali ke halaman Home.
-11. Profile
-    Pengguna dapat membuka halaman PROFILE melalui navigasi bawah untuk melihat dan mengubah nama profil. Tekan tombol SAVE setelah melakukan perubahan.
+
 
